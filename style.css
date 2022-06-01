@@ -1,0 +1,110 @@
+#padre{
+    display: grid;
+    grid-template-areas:"navegador navegador" 
+                        "cabecera cabecera" 
+                        "nosotros info"
+                        "nosotros info"
+                        "piePagina piePagina";
+
+    grid-template-rows: 95px 100px auto 100px;
+    grid-template-columns: 60% auto;          
+
+}
+
+.navegador{
+    grid-area: navegador;
+}
+
+.cabecera{
+    grid-area: cabecera;
+    background-color: #fff3b0;
+}
+
+.info{
+    grid-area: info;
+    background-color: #e09f3e;
+}
+
+
+
+.piePagina{
+    grid-area: piePagina;
+    background-color: #335c67;
+}
+
+body{
+    background-color: #335c67;
+}
+
+.nosotros{
+    grid-area: nosotros;
+    background-color: #e09f3e;
+}
+
+.articulosBlog{
+    grid-area: articulosBlog;
+    background-color: #e09f3e;
+}
+
+.Asidefiel{
+    grid-area: Asidefiel;
+    background-color: #e09f3e;
+}
+/*Inicio de menu*/
+.navegador ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #335c67;
+}
+
+.navegador li {
+    list-style-type: none;
+}
+
+.navegador a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.menuNav:hover{
+    background-color: blueviolet;
+}
+.menuNav:hover a{
+    color: blue;
+}
+
+/*Inicio de encabezado*/
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.SubTitulo{
+    text-decoration: none;
+    color: black;
+}
+
+/*Parrafo*/
+
+.pConEstilo{
+    font-style: italic;
+    font-size: larger;
+    font-weight: lighter;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.titulosVarios{
+    text-align: left;
+    text-decoration: underline;
+}
+
+.SubTitulo{
+    font-family: 'Work Sans', sans-serif;
+    font-size: large;
+}
